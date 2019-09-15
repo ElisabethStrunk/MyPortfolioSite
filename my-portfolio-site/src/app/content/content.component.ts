@@ -12,4 +12,8 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  triggerOutlook() {
+    window.location.href = "mailto:elisabeth.maria.strunk@gmail.com";
+  } 
 }
