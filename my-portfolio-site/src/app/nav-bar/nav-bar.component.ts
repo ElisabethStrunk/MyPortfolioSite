@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentComponent } from '../content/content.component';
+import { ContentService } from '../services/content.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,20 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contentService: ContentService) { }
 
   ngOnInit() {
   }
 
-  showAbout() {
-
+  goToAbout() {
+    this.contentService.showAbout();
   }
 
-  showProjects() {
-
+  goToProjects() {
+    this.contentService.showProjects();
   }
-
-  showContact() {
-
+  goToContact() {
+    this.contentService.showContact();
   }
 }

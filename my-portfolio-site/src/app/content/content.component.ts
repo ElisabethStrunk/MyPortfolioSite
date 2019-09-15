@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentService } from '../services/content.service';
 
 @Component({
   selector: 'app-content',
@@ -7,13 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  showAbout = true;
-  showProjects = false;
-  showContact = false;
-
-  constructor() { }
+  constructor(private contentService: ContentService) { }
 
   ngOnInit() {
   }
-
 }

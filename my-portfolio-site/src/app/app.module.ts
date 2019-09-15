@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContentComponent } from './content/content.component';
+import { ContentService } from './services/content.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ContentComponent } from './content/content.component';
     MatToolbarModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
