@@ -1,0 +1,15 @@
+.block {
+  background: #fcba03;
+  padding: 5em;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+  margin: auto;
+	-moz-box-shadow: 3px 4px 7px 0px #899599;
+	-webkit-box-shadow: 3px 4px 7px 0px #899599;
+	box-shadow: 3px 4px 7px 0px #899599;
+}
+
+.icon {
+  width: 2em;
+}

@@ -1,3 +1,36 @@
-<p *ngIf="contentService.showAboutContent">ABOUT</p>
-<p *ngIf="contentService.showProjectsContent">PROJECTS</p>
-<p *ngIf="contentService.showContactContent">CONTACT</p>
+<!--********** ABOUT SECTION **********-->
+<div *ngIf="contentService.showAboutContent">
+  <h2>ABOUT</h2>
+</div>
+
+<!--********** PROJECTS SECTION **********-->
+<div *ngIf="contentService.showProjectsContent">
+  <h2>PROJECTS</h2>
+</div>
+
+<!--********** CONTACT SECTION **********-->
+<div *ngIf="contentService.showContactContent">
+  <h2>CONTACT</h2>
+  <div class="block">
+    <img class="icon" src="../assets/images/address_icon.png"><br>
+    Jan-Valkenburg-Str. 7<br>
+    20355 Hamburg<br>
+    Germany<br>
+    <br><br>
+    <img class="icon" src="../assets/images/phone_icon.png"><br>
+    +49 175 4462749<br>
+    <br><br>
+    <img class="icon" src="../assets/images/email_icon.png"><br>
+    elisabeth.maria.strunk@gmail.com<br>
+    <br><br>
+    <img class="icon" src="../assets/images/linkedin_icon.png"><br>
+    www.linkedin.com/in/elisabeth-strunk<br>
+    <br><br>
+    <img class="icon" src="../assets/images/github_icon.png"><br>
+    https://github.com/ElisabethStrunk <br>
+    <br><br>
+    <img class="icon" src="../assets/images/web_icon.png"><br>
+    http://elisabethstrunk.me <br>
+
+  </div>
+</div>
