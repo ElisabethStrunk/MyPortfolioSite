@@ -1,40 +1,62 @@
 <!--********** ABOUT SECTION **********-->
 <div *ngIf="contentService.showAboutContent">
-  <h2>ABOUT</h2>
-</div>
-
-<!--********** PROJECTS SECTION **********-->
-<div *ngIf="contentService.showProjectsContent">
-  <h2>PROJECTS</h2>
-</div>
-
-<!--********** CONTACT SECTION **********-->
-<div *ngIf="contentService.showContactContent">
-  <h2>CONTACT</h2>
-  <div class="block">
-    <img class="icon" src="../assets/images/address_icon.png"><br>
-    Jan-Valkenburg-Str. 7<br>
-    20355 Hamburg<br>
-    Germany<br>
-    <br><br>
-    <img class="icon" src="../assets/images/phone_icon.png"><br>
-    +49 175 4462749<br>
-    <br><br>
-    <img class="icon" src="../assets/images/email_icon.png"><br>
-    <a href="#" (click)="triggerOutlook()">elisabeth.maria.strunk@gmail.com</a><br>
-    <br><br>
-    <img class="icon" src="../assets/images/linkedin_icon.png"><br>
-    <a href="https://www.linkedin.com/in/elisabeth-strunk/" target="_blank">
-      https://www.linkedin.com/in/elisabeth-strunk
-    </a><br>
-    <br><br>
-    <img class="icon" src="../assets/images/github_icon.png"><br>
-    <a href="https://github.com/ElisabethStrunk" target="_blank">
-      https://github.com/ElisabethStrunk
-    </a><br>
-    <br><br>
-    <img class="icon" src="../assets/images/web_icon.png"><br>
-    <a href="http://elisabethstrunk.me" target="_blank">http://elisabethstrunk.me</a><br>
-
+  <h2>ABOUT ME</h2>
+  <div class="container">
+    <mat-grid-list cols="2" rowHeight="1:1" gutterSize="2em">
+      <mat-grid-tile class="block">
+        <div id="about-me" class="text">
+          Hi! I am Elisabeth.<br>
+          I am a software engineer passionate about embedded and web back end software development.
+          I love working on projects that are in-teresting and challenging and require using
+          technologies, APIs and packages I have never worked with before. To give me the perfect
+          environment, combine Scrum and a positive, playful atmosphere with highly motivated team
+          members, who love their work and are willing to share their expertise.
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="centered">
+          <img src="../assets/images/profile_pic_1.jpg" alt="My profile picture">
+          <h2>Elisabeth Strunk</h2>
+          <p>Software Engineer</p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
 </div>
+
+  <!--********** PROJECTS SECTION **********-->
+  <div *ngIf="contentService.showProjectsContent">
+    <h2>PROJECTS</h2>
+  </div>
+
+  <!--********** CONTACT SECTION **********-->
+  <div *ngIf="contentService.showContactContent">
+    <h2>CONTACT</h2>
+    <div class="block">
+      <div class="text">
+        <img class="icon" src="../assets/images/address_icon.png"><br>
+        Jan-Valkenburg-Str. 7<br>
+        20355 Hamburg<br>
+        Germany<br>
+        <br><br>
+        <img class="icon" src="../assets/images/phone_icon.png"><br>
+        +49 175 4462749<br>
+        <br><br>
+        <img class="icon" src="../assets/images/email_icon.png"><br>
+        <a href="#" (click)="triggerOutlook()">elisabeth.maria.strunk@gmail.com</a><br>
+        <br><br>
+        <img class="icon" src="../assets/images/linkedin_icon.png"><br>
+        <a href="https://www.linkedin.com/in/elisabeth-strunk/" target="_blank">
+          https://www.linkedin.com/in/elisabeth-strunk
+        </a><br>
+        <br><br>
+        <img class="icon" src="../assets/images/github_icon.png"><br>
+        <a href="https://github.com/ElisabethStrunk" target="_blank">
+          https://github.com/ElisabethStrunk
+        </a><br>
+        <br><br>
+        <img class="icon" src="../assets/images/web_icon.png"><br>
+        <a href="http://elisabethstrunk.me" target="_blank">http://elisabethstrunk.me</a><br>
+      </div>
+    </div>
+  </div>

@@ -24,3 +24,7 @@ h2 {
   font-family: bebas_neueregular, sans-serif;
   letter-spacing: .1em;
 }
+
+body {
+  margin: 2em;
+}
