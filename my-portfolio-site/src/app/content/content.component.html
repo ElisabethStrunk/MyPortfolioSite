@@ -24,39 +24,118 @@
   </div>
 </div>
 
-  <!--********** PROJECTS SECTION **********-->
-  <div *ngIf="contentService.showProjectsContent">
-    <h2>PROJECTS</h2>
-  </div>
-
-  <!--********** CONTACT SECTION **********-->
-  <div *ngIf="contentService.showContactContent">
-    <h2>CONTACT</h2>
-    <div class="block">
+<!--********** PROJECTS SECTION **********-->
+<div *ngIf="contentService.showProjectsContent">
+  <h2>PROJECTS</h2>
+  <mat-grid-list cols="2" rowHeight="1:1" gutterSize="2em">
+    <mat-grid-tile class="block">
       <div class="text">
-        <img class="icon" src="../assets/images/address_icon.png"><br>
-        Jan-Valkenburg-Str. 7<br>
-        20355 Hamburg<br>
-        Germany<br>
-        <br><br>
-        <img class="icon" src="../assets/images/phone_icon.png"><br>
-        +49 175 4462749<br>
-        <br><br>
-        <img class="icon" src="../assets/images/email_icon.png"><br>
-        <a href="#" (click)="triggerOutlook()">elisabeth.maria.strunk@gmail.com</a><br>
-        <br><br>
-        <img class="icon" src="../assets/images/linkedin_icon.png"><br>
-        <a href="https://www.linkedin.com/in/elisabeth-strunk/" target="_blank">
-          https://www.linkedin.com/in/elisabeth-strunk
-        </a><br>
-        <br><br>
-        <img class="icon" src="../assets/images/github_icon.png"><br>
-        <a href="https://github.com/ElisabethStrunk" target="_blank">
-          https://github.com/ElisabethStrunk
-        </a><br>
-        <br><br>
-        <img class="icon" src="../assets/images/web_icon.png"><br>
-        <a href="http://elisabethstrunk.me" target="_blank">http://elisabethstrunk.me</a><br>
+        I developed a full stack web application with <b>Python/Flask</b> that provides a list of
+        sports items within a variety of categories. The items are managed in an <b>SQLite</b> database.
+        The application also provides a user authentication system utilizing Google sign-in as
+        well as Facebook sign-in. Signed-in users can add, edit and delete items.
       </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="centered">
+        <img src="../assets/images/profile_pic_1.jpg" alt="My profile picture">
+        <a href="http://elisabethstrunk.me/item_catalog/catalog/" target="_blank"><h2>Sports Item Catalog</h2></a>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="block grey">
+      <div class="text">
+        This project I did during my time with <a href="https://salt-and-pepper.eu/en/software-solutions/" target="_blank">SALT AND PEPPER Software GmbH & Co. KG</a>, Hamburg.
+        <br>
+        Bringing together 7 co-workers from different departments in a Friday afternoon project, we
+        developed a RaspberryPi-controlled robot using <b>Python</b> (RPi.GPIO and Flask) for a student internship.
+        The robot is manually controllable by mobile app via WiFi.
+        <br>
+        We design the software in its most simple way so students aged 13-16 years would be able to
+        understand the code. We presented the project with missing code sections to a 13 year old student intern,
+        who had lots of fun bringing the SoSo Bot back to life.
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="centered">
+        <img src="../assets/images/profile_pic_1.jpg" alt="My profile picture">
+        <a href="https://github.com/ElisabethStrunk/SoSoBot" target="_blank"><h2>SoSo Bot</h2></a>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="block">
+      <div class="text">
+        I developed a modular embedded controller software written in <b>C++</b> as a basis for an
+        autonomous car-like robot. The aim was to design a base software and implement it on the
+        existing hardware to lay the foundation for future student projects on this particular model car.
+        The software architecture I designed is based on software modules that can be handled independently.
+        <br>
+        Existing code was used to implement software modules for the communication with the robot’s sensors
+        and actuators. Furthermore, software modules for a PID velocity controller, a yaw angle controller
+        and a simple motion profile generator for point-to-point movement were developed from scratch,
+        including the design and parameterization of the controllers.
+        <br>
+        For the work I did on this project I was awarded the <a href="https://www.vde-suedbayern.de/de/ueber-uns/preise-ehrungen/vde-award/muenchener-abend-2018" target="_blank">VDE Award 2018</a>.
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="centered">
+        <img src="../assets/images/profile_pic_1.jpg" alt="My profile picture">
+        <a href="https://drive.google.com/file/d/1yFeAeqxra--2L8yWc1xdhTuWUiyEWUO9/view" target="_blank"><h2>Connected Car</h2></a>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="block grey">
+      <div class="text">
+        I did this project together with two friends for the "Laboratory for Microcontroller Technology"
+        at the <a href="https://www.th-rosenheim.de/" target="_blank">University Of Applied Sciences Rosenheim</a>.
+        <br>
+        The aim of the project was to improve the position and motion estimation for a rolling ball on a
+        two-axle traversable platform with an <a href="https://en.wikipedia.org/wiki/Extended_Kalman_filter" target="_blank">Extended Kalman Filter (EKF)</a>.
+        <br>
+        We first simulated the state estimation by EKF with real measurement data in <b>MATLAB</b>, then
+        implemented it in <b>C</b> code, integrated it into an existing controller program and deployed it on a
+        32-bit microcontroller for real-time execution with the real system.
+        <br>
+        With our algorithm implemented there was an observable increase in the velocity and accuracy of
+        the controller.
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="centered">
+        <img src="../assets/images/profile_pic_1.jpg" alt="My profile picture">
+        <a href="https://drive.google.com/file/d/1L9R2V80X-h3Cd8YSO5kNd6naZLvlgbl8/view" target="_blank"><h2>Balance Board</h2></a>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
+</div>
+
+<!--********** CONTACT SECTION **********-->
+<div *ngIf="contentService.showContactContent">
+  <h2>CONTACT</h2>
+  <div class="block">
+    <div class="list">
+      <img class="icon" src="../assets/images/address_icon.png"><br>
+      Jan-Valkenburg-Str. 7<br>
+      20355 Hamburg<br>
+      Germany<br>
+      <br><br>
+      <img class="icon" src="../assets/images/phone_icon.png"><br>
+      +49 175 4462749<br>
+      <br><br>
+      <img class="icon" src="../assets/images/email_icon.png"><br>
+      <a href="#" (click)="triggerOutlook()">elisabeth.maria.strunk@gmail.com</a><br>
+      <br><br>
+      <img class="icon" src="../assets/images/linkedin_icon.png"><br>
+      <a href="https://www.linkedin.com/in/elisabeth-strunk/" target="_blank">
+        https://www.linkedin.com/in/elisabeth-strunk
+      </a><br>
+      <br><br>
+      <img class="icon" src="../assets/images/github_icon.png"><br>
+      <a href="https://github.com/ElisabethStrunk" target="_blank">
+        https://github.com/ElisabethStrunk
+      </a><br>
+      <br><br>
+      <img class="icon" src="../assets/images/web_icon.png"><br>
+      <a href="http://elisabethstrunk.me" target="_blank">http://elisabethstrunk.me</a><br>
     </div>
   </div>
+</div>

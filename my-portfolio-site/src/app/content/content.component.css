@@ -3,6 +3,10 @@
   background: #fcba03;
 }*/
 
+b {
+  font-weight: bold;
+}
+
 .centered {
   align-content: center;
   padding: .5em;
@@ -20,6 +24,20 @@
 .text {
   margin: 4em;
   font-size: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  line-height: 1.5;
+}
+
+.list {
+  margin: 4em;
+  font-size: 15px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .inset {
@@ -41,14 +59,6 @@ mat-grid-list {
 
 mat-grid-tile {
   text-align: center;
-}
-
-#about-me {
-  text-align: justify;
-  text-justify: inter-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 
 /********** Style for Contact content ***********/
